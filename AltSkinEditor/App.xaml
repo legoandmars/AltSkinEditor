@@ -1,7 +1,7 @@
-﻿<Application x:Class="SlapCityCustomSuitEditor.App"
+﻿<Application x:Class="AltSkinEditor.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:SlapCityCustomSuitEditor"
+             xmlns:local="clr-namespace:AltSkinEditor"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 		

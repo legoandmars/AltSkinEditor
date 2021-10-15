@@ -2,11 +2,11 @@
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace SlapCityCustomSuitEditor.Utilities
+namespace AltSkinEditor.Utilities
 {
     class GameUtils
     {
-        private const string APP_ID = "725480";
+        private const string APP_ID = "1414850";
 
         internal static string GetSteamLocation()
         {

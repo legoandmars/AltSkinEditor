@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D7EE51F5-6126-4AC8-A9B8-DC3B7F9CF254}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SlapCityCustomSuitEditor</RootNamespace>
-    <AssemblyName>SlapCityCustomSuitEditor</AssemblyName>
+    <RootNamespace>AltSkinEditor</RootNamespace>
+    <AssemblyName>AltSkinEditor</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AssetsTools.NET">
+      <HintPath>..\..\AssetsTools.NET\AssetTools.NET\bin\Release\netstandard2.0\AssetsTools.NET.dll</HintPath>
+    </Reference>
     <Reference Include="ControlzEx, Version=4.0.0.0, Culture=neutral, PublicKeyToken=69f1c32f803d307e, processorArchitecture=MSIL">
       <HintPath>..\packages\ControlzEx.4.4.0\lib\net462\ControlzEx.dll</HintPath>
     </Reference>
@@ -48,6 +51,10 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.6.0.0-rc.2.21480.5\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
     <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
       <Private>True</Private>
@@ -74,7 +81,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Assets\AssetHandler.cs" />
+    <Compile Include="Data\CharacterData.cs" />
+    <Compile Include="Data\CharacterTextureData.cs" />
+    <Compile Include="Data\EditorSkinData.cs" />
+    <Compile Include="Data\SkinFormat.cs" />
     <Compile Include="Data\PackageJSON.cs" />
+    <Compile Include="Data\ThunderstoreData.cs" />
+    <Compile Include="Prompt.xaml.cs">
+      <DependentUpon>Prompt.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Utilities\Constants.cs" />
     <Compile Include="Utilities\GameUtils.cs" />
     <Page Include="MainWindow.xaml">
@@ -89,6 +105,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Prompt.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -119,24 +139,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="PORTRAIT_frallan_invert.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Strawberry.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="PORTRAIT_Strawberry.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="dark fish.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="dark remedy.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="missing texture.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="icons8-drag-and-drop-100.png" />

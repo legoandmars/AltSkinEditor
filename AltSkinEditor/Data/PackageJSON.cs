@@ -1,4 +1,4 @@
-﻿namespace SlapCityCustomSuitEditor.Data
+﻿namespace AltSkinEditor.Data
 {
     [System.Serializable]
     public class PackageJSON
