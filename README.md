@@ -1,5 +1,5 @@
 # AltSkinEditor
-A custom editor for [AltSkins](https://github.com/legoandmars/AltSkins), a dynamic mod for loading skins in Nickelodeon All-Star Brawl.
+A custom editor for [AltSkins](https://github.com/legoandmars/AltSkinEditor), a dynamic mod for loading skins in Nickelodeon All-Star Brawl.
 
 ## Installation
 
