@@ -1,9 +1,9 @@
 # AltSkinEditor
-A custom editor for [AltSkins](https://github.com/legoandmars/AltSkinEditor), a dynamic mod for loading skins in Nickelodeon All-Star Brawl.
+A custom editor for [AltSkins](https://github.com/legoandmars/AltSkins), a dynamic mod for loading skins in Nickelodeon All-Star Brawl.
 
 ## Installation
 
-You can install AltSkinEditor by downloading the [latest release on the releases tab](https://github.com/legoandmars/AltSkins/releases/latest).
+You can install AltSkinEditor by downloading the [latest release on the releases tab](https://github.com/legoandmars/AltSkinEditor/releases/latest).
 
 ## Usage
 Once installed, launching AltSkinEditor will ask you if you want to automatically extract Textures from your game. It's highly recommended you do this, as it will give you more accurate previews and textures for you to edit.
